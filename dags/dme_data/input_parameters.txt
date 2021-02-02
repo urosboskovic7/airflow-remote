@@ -1,0 +1,134 @@
+{
+    "data": [
+        {
+            "opType": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "ready"
+            },
+            "dateModified": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "DateTime",
+                "value": "2018-11-19T14:33:04.00Z"
+            },
+            "type": "Device",
+            "device_owner": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "s4c-admin"
+            },
+            "screenId": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "mobilePhone"
+            },
+            "retrieve_data_mode": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "push"
+            },
+            "dataformat_protocol": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "JSON"
+            },
+            "organization": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "91785315-5d5e-400b-ac84-1b382ea5ebae"
+            },
+            "noise": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "text",
+                "value": "text2"
+            },
+            "location": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2019-11-11T14:02:14.432Z"
+                    }
+                },
+                "type": "geo:point",
+                "value": "3.833807373225203E-5,1.962076142336068E-5"
+            },
+            "id": "mobilePhone",
+            "transport_protocol": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "MQTT"
+            },
+            "TimeInstant": {
+                "metadata": {},
+                "type": "ISO8601",
+                "value": "2020-11-17T11:49:26.00Z"
+            },
+            "dB": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2019-11-11T14:02:05.725Z"
+                    }
+                },
+                "type": "text",
+                "value": "text3"
+            },
+            "mobile_device": {
+                "metadata": {
+                    "TimeInstant": {
+                        "type": "ISO8601",
+                        "value": "2020-11-17T11:49:26.055Z"
+                    }
+                },
+                "type": "Text",
+                "value": "true"
+            }
+        }
+    ],
+    "subscriptionId": "5dce824e9ff4cfd7d079dfd1"
+}
