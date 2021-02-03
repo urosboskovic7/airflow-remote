@@ -1,1 +1,0 @@
-[{"id":"Room1","type":"Room","pressure":{"type":"Float","value":763,"metadata":{}},"temperature":{"type":"Float","value":26.5,"metadata":{}}}]
