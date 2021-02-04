@@ -57,14 +57,14 @@ default_args = {
 dag = DAG(
     'delete_dags',
     default_args=default_args,
-    description='A simple tutorial DAG',
+    description='A simple delete DAG',
     schedule_interval='@once',
 )
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 t1 = BashOperator(
     task_id='delete_dags_task',
-    bash_command='rm /opt/airflow/dags',
+    bash_command='rm /opt/airflow/dags/dags/*.py',
     dag=dag,
 )
 
