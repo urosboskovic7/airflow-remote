@@ -63,7 +63,7 @@ dag = DAG(
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 t1 = BashOperator(
-    task_id='delete_dags',
+    task_id='delete_dags_task',
     bash_command='rm /opt/airflow/dags',
     dag=dag,
 )
