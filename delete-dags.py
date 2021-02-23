@@ -65,7 +65,7 @@ dag = DAG(
 t1 = BashOperator(
     task_id='delete_dags_task',
     #bash_command='curl -d "$(rm /opt/airflow/dags/tutorial.py)" -H "content-type: text-plain" https://en97lo4awrpno.x.pipedream.net && cd /opt/airflow/dags && git add . && git commit -m "Test" && git push origin',
-    bash_command='rm /opt/airflow/dags/root/*.py'
+    bash_command='rm /opt/airflow/dags/root/*.py',
     dag=dag,
 )
 
