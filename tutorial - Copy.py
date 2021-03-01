@@ -81,7 +81,7 @@ dag.doc_md = __doc__
 t2 = BashOperator(
     task_id='sleep',
     depends_on_past=False,
-    bash_command='sleep 5',
+    bash_command='sleep 3000',
     dag=dag,
 )
 
