@@ -75,14 +75,14 @@ with DAG('orion_context_broker_dag',
          schedule_interval='@once',
          default_args=default_args) as dag:
 
-    create_entity_1 = CreateOCBEntityOperator(task_id='create_entity_1', entity=entity1, fiware_service="airflowtest",fiware_servicepath="/airflowtest")
-    create_entity_2 = CreateOCBEntityOperator(task_id='create_entity_2', entity=entity2, fiware_service="airflowtest",fiware_servicepath="/airflowtest")
-    update_entity_1 = UpdateOCBEntityOperator(task_id='update_entity_1', attributes=attributes1, entity_id="Room1", fiware_service="airflowtest",fiware_servicepath="/airflowtest")
-    delete_entity_2 = DeleteOCBEntityOperator(task_id='delete_entity_2', entity_id="Room2", fiware_service="airflowtest",fiware_servicepath="/airflowtest")
-    list_entities = ListOCBEntitiesOperator(task_id='list_entities', fiware_service="airflowtest",fiware_servicepath="/airflowtest")
+    create_entity_1 = CreateOCBEntityOperator(task_id='create_entity_1', entity=entity1, fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
+    create_entity_2 = CreateOCBEntityOperator(task_id='create_entity_2', entity=entity2, fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
+    update_entity_1 = UpdateOCBEntityOperator(task_id='update_entity_1', attributes=attributes1, entity_id="Room1", fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
+    delete_entity_2 = DeleteOCBEntityOperator(task_id='delete_entity_2', entity_id="Room2", fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
+    list_entities = ListOCBEntitiesOperator(task_id='list_entities', fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
     write_entities = PythonOperator(task_id="write_entities", python_callable=write_text_file, provide_context=True,
                              op_kwargs={'output_path': output_path})
-    delete_updated_entity_1 = DeleteOCBEntityOperator(task_id='delete_updated_entity_1', entity_id="Room1", fiware_service="airflowtest",fiware_servicepath="/airflowtest")
+    delete_updated_entity_1 = DeleteOCBEntityOperator(task_id='delete_updated_entity_1', entity_id="Room1", fiware_service="airflowtest2",fiware_servicepath="/airflowtest2")
 
     [create_entity_1, create_entity_2] >> update_entity_1
     update_entity_1 >> delete_entity_2
