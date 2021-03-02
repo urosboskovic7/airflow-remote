@@ -8,9 +8,7 @@ from custom_operators.openwhisk_operators import InvokeOpenwhiskAction
 
 
 
-curr_file = os.path.realpath(__file__)
-folder_path = os.path.abspath(os.path.join(__file__,"../"))
-folder_path = os.path.join(folder_path, "openwhisk_data")
+folder_path = "/opt/airflow/dags_data/openwhisk_data"
 city_one_input_path = os.path.join(folder_path, "city_one_input.txt")
 city_two_input_path = os.path.join(folder_path, "city_two_input.txt")
 output_path = os.path.join(folder_path, "output_file.txt")

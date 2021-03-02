@@ -6,9 +6,8 @@ from airflow.operators.python_operator import PythonOperator
 from custom_operators.orion_operators import CreateOCBEntityOperator , DeleteOCBEntityOperator, UpdateOCBEntityOperator, ListOCBEntitiesOperator
 
 
-curr_file = os.path.realpath(__file__)
-folder_path = os.path.abspath(os.path.join(__file__,"../"))
-folder_path = os.path.join(folder_path, "ocb_data")
+
+folder_path = "/opt/airflow/dags_data/ocb_data"
 output_path = os.path.join(folder_path, "output_file.txt")
 
 

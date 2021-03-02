@@ -8,14 +8,14 @@ from airflow.operators.python_operator import PythonOperator
 # These args will get passed on to each operator
 # You can override them on a per-task basis during operator initialization
 
-curr_file = os.path.realpath(__file__)
-folder_path = os.path.abspath(os.path.join(__file__,"../"))
+# curr_file = os.path.realpath(__file__)
+# folder_path = os.path.abspath(os.path.join(__file__,"../"))
 
 
 from custom_operators.mashup_operators import InvokeMashupOperatorDefault
 
 
-folder_path = os.path.join(folder_path, "dme_data")
+folder_path = "/opt/airflow/dags_data/dme_data"
 input_parameters_path = os.path.join(folder_path, "input_parameters.txt")
 output_path = os.path.join(folder_path, "output_file.txt")
 
